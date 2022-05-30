@@ -56,7 +56,7 @@ Press Enter to start
                 already_used.append(line.replace('\n', ''))
 
         while True:
-            username_to_try = self.genUsername(length={self.letters})
+            username_to_try = self.genUsername(length=int(self.letters))
             if username_to_try in already_used:
                 pass
             else:
