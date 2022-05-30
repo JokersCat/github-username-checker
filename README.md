@@ -21,10 +21,10 @@ Love ❌ code ✅
 
 ## :fire: Features
 
-✔ Saves checked tries \n
-✔ Config file \n
-✔ Webhook support \n
-✔ Sound notify thing \n
+✔ Saves checked tries
+✔ Config file 
+✔ Webhook support 
+✔ Sound notify thing 
 
 ---
 
