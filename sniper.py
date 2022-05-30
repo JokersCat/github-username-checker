@@ -15,6 +15,10 @@ import string
 
 import datetime
 now = datetime.datetime.now()
+try:
+    open('stuff/Hits.txt','w')
+except:
+    pass
 
 class main():
     def __init__(self):
@@ -70,6 +74,10 @@ class main():
             response = webhook.execute()
 
             with open(f'stuff/registered.txt','a+') as file:
+                file.write(f'{username_to_try}\n')
+
+
+            with open('stuff/Hits.txt','a+') as file:
                 file.write(f'{username_to_try}\n')
 
         if r.status_code == 429:
