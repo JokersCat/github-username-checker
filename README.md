@@ -11,6 +11,7 @@ Checks for not used github usernames
 
 
 <h2 align="center">
+  Its my first "project" it was just made for fun dont blame me please :(
   Github username checker/sniper was made by me
 
 Love ❌ code ✅
