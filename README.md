@@ -11,7 +11,7 @@ Checks for not used github usernames
 
 
 <h2 align="center">
-  Twitch XBruter was made by me
+  Github username checker/sniper was made by me
 
 Love ❌ code ✅
 
