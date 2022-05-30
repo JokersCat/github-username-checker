@@ -42,7 +42,7 @@ class main():
 Press Enter to start
 -->
 '''))
-    
+
 
     def genUsername(self, length):
         return ''.join(random.choices(string.ascii_lowercase, k=length))
@@ -56,7 +56,7 @@ Press Enter to start
                 already_used.append(line.replace('\n', ''))
 
         while True:
-            username_to_try = self.genUsername(length=3)
+            username_to_try = self.genUsername(length={self.letters})
             if username_to_try in already_used:
                 pass
             else:
