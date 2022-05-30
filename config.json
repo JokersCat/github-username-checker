@@ -1,0 +1,5 @@
+{
+ "letters_to_snipe": "2",
+ "notify" : "true",
+ "webhook": "your webhook"
+}
