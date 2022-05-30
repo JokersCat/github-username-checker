@@ -24,12 +24,31 @@ class main():
     def __init__(self):
         self.Tries = 0
         self.sniped = 0
+        config = json.load(open('config.json'))
+        self.letters = config['letters_to_snipe']
+
+    def Banner(self):
+        config = json.load(open('config.json'))
+        os.system('cls')
+        input(Fade.Vertical(Colors.cyan_to_blue,f'''
+            ╔═╗┬┌┬┐┬ ┬┬ ┬┌┐   ╔═╗┌┐┌┬┌─┐┌─┐┬─┐
+            ║ ╦│ │ ├─┤│ │├┴┐  ╚═╗││││├─┘├┤ ├┬┘
+            ╚═╝┴ ┴ ┴ ┴└─┘└─┘  ╚═╝┘└┘┴┴  └─┘┴└─
+         ══╦═════════════════════════════════╦══
+ ╔═════════╩═════════════════════════════════╩═════════╗
+ ║              Running for {self.letters} letter names             ║
+ ╚═════════════════════════════════════════════════════╝
+
+Press Enter to start
+-->
+'''))
+    
 
     def genUsername(self, length):
         return ''.join(random.choices(string.ascii_lowercase, k=length))
 
     def snipe(self):
-        os.system(f'title Github username sniper ^| tries: {self.Tries} ^| sniped: {self.sniped} 🎉')
+        os.system(f'title Github username sniper ^| tries: {self.Tries} ^| sniped: {self.sniped} 🎉 ^| running for: {self.letters}letter names')
         already_used = []
         with open('stuff/registered.txt', 'r') as file:
             lines = file.readlines()
@@ -87,6 +106,8 @@ class main():
         self.snipe()
 
 main = main()
-
+main.Banner()
 for i in range(5):
     t = threading.Thread(target=main.snipe).start()
+
+
