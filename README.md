@@ -54,6 +54,4 @@ v0.0.1 ⋮ 2022-05-30
 + Added Main Script
 ```
 
-<p align="center">
-  README.md inspired from Rdimo
-</p>
+README.md inspired from Rdimo
